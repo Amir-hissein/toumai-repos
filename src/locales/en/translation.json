@@ -1,0 +1,198 @@
+{
+    "header": {
+        "home": "Home",
+        "services": "Services",
+        "universities": "Universities",
+        "programs": "Programs",
+        "testimonials": "Testimonials",
+        "contact": "Contact",
+        "apply_now": "Apply Now"
+    },
+    "hero": {
+        "badge": "🎓 Your gateway to excellence",
+        "title_start": "Achieve Your Dreams",
+        "title_end": "of Studying in Turkey",
+        "description": "MG SERVİS guides you to the best public and private Turkish universities. Benefit from personalized support from orientation to your settlement.",
+        "cta_primary": "Start Now",
+        "cta_secondary": "Learn More",
+        "stats": {
+            "universities": "Partner Universities",
+            "students": "Students Assisted",
+            "success": "Success Rate",
+            "countries": "Countries Represented"
+        }
+    },
+    "services": {
+        "subtitle": "Our Services",
+        "title": "Complete",
+        "title_highlight": "Guidance",
+        "items": {
+            "consultation": {
+                "title": "Free Consultation",
+                "desc": "In-depth analysis of your academic profile and orientation towards the best options."
+            },
+            "admission": {
+                "title": "Guaranteed Admission",
+                "desc": "Complete management of your application file to maximize your chances."
+            },
+            "visa": {
+                "title": "Visa Assistance",
+                "desc": "Step-by-step support for obtaining your student visa stress-free."
+            },
+            "housing": {
+                "title": "Accommodation",
+                "desc": "Help finding housing (residence or apartment) before your arrival."
+            },
+            "transfer": {
+                "title": "VIP Welcome",
+                "desc": "Airport pickup and private transfer to your place of residence."
+            },
+            "support": {
+                "title": "24/7 Support",
+                "desc": "A dedicated team available to assist you throughout your first year."
+            }
+        }
+    },
+    "universities": {
+        "subtitle": "Academic Excellence",
+        "title": "Our Partner",
+        "title_highlight": "Universities",
+        "tabs": {
+            "public": "Public Universities",
+            "private": "Private Universities"
+        },
+        "card": {
+            "details": "View Details",
+            "location": "Location"
+        },
+        "view_all": "View All Universities",
+        "locations": {
+            "Istanbul": "Istanbul",
+            "Ankara": "Ankara",
+            "Izmir": "Izmir",
+            "Antalya": "Antalya",
+            "Bursa": "Bursa",
+            "Kocaeli": "Kocaeli",
+            "Sakarya": "Sakarya",
+            "Trabzon": "Trabzon",
+            "Erzurum": "Erzurum",
+            "Samsun": "Samsun",
+            "Adana": "Adana",
+            "Konya": "Konya",
+            "Kayseri": "Kayseri",
+            "Eskişehir": "Eskisehir",
+            "Mersin": "Mersin",
+            "Isparta": "Isparta",
+            "Çanakkale": "Çanakkale",
+            "Bolu": "Bolu",
+            "Muğla": "Muğla",
+            "Denizli": "Denizli"
+        }
+    },
+    "programs": {
+        "subtitle": "Your Career Future",
+        "title": "Explore Our",
+        "title_highlight": "Programs",
+        "categories": {
+            "engineering": "Engineering & Technology",
+            "health": "Medicine & Health",
+            "business": "Business & Economics",
+            "social": "Social Sciences",
+            "arts": "Arts & Design",
+            "science": "Science & Research"
+        },
+        "view_all": "View All Programs"
+    },
+    "testimonials": {
+        "subtitle": "Testimonials",
+        "title": "What Our",
+        "title_highlight": "Students Say"
+    },
+    "process": {
+        "subtitle": "Simple Process",
+        "title": "How It",
+        "title_highlight": "Works?",
+        "steps": {
+            "1": {
+                "title": "Consultation",
+                "desc": "Profile analysis"
+            },
+            "2": {
+                "title": "Selection",
+                "desc": "University choice"
+            },
+            "3": {
+                "title": "Application",
+                "desc": "Document prep"
+            },
+            "4": {
+                "title": "Admission",
+                "desc": "Acceptance letter"
+            },
+            "5": {
+                "title": "Visa & Go",
+                "desc": "Formalities & Travel"
+            }
+        }
+    },
+    "contact": {
+        "subtitle": "Contact Us",
+        "title_start": "Start Your",
+        "title_end": "Adventure",
+        "desc": "Fill out the form and our team will contact you within 24h",
+        "form": {
+            "name": "Full Name",
+            "email": "Email",
+            "phone": "Phone Number",
+            "uni_type": "University Type",
+            "public": "Public",
+            "private": "Private",
+            "program": "Desired Program",
+            "program_placeholder": "Search for a program...",
+            "level": "Current Level",
+            "year": "Start Year",
+            "message": "Message (Optional)",
+            "consent": "I agree that my data will be used to contact me regarding my request",
+            "submit": "Send My Request",
+            "success_title": "Message Sent!",
+            "success_desc": "Thank you {{name}}, our team will contact you within 24h."
+        }
+    },
+    "faq": {
+        "subtitle": "FAQ",
+        "title": "Frequently Asked",
+        "title_highlight": "Questions",
+        "items": [
+            {
+                "q": "What are the service fees?",
+                "a": "Fees vary by service. Contact us for a quote."
+            },
+            {
+                "q": "How long does the process take?",
+                "a": "Usually between 1 and 3 weeks."
+            },
+            {
+                "q": "Do I need to speak Turkish?",
+                "a": "No, many programs are 100% in English."
+            },
+            {
+                "q": "Are there scholarships?",
+                "a": "Yes, up to 100% in some private universities."
+            }
+        ]
+    },
+    "footer": {
+        "desc": "MG SERVİS is an agency specializing in guiding international students towards academic excellence in Turkey.",
+        "links_title": "Quick Links",
+        "services_title": "Our Services",
+        "contact_title": "Contact Us",
+        "rights": "© {{year}} MG SERVİS - All rights reserved",
+        "legal": {
+            "terms": "Legal Notice",
+            "privacy": "Privacy Policy",
+            "cgu": "Terms of Use"
+        },
+        "hours": "Mon-Fri 9am-6pm",
+        "developed_by": "Developed by TOBEESOFT"
+    }
+}

@@ -1,0 +1,168 @@
+.filieres-section {
+    background-color: var(--neutral-light);
+    padding: 6rem 0;
+}
+
+.filieres-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.filiere-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.filiere-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.08), 0 10px 20px -5px rgba(0, 0, 0, 0.04);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+
+.filiere-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+/* Removed background circles */
+.filiere-icon-bg {
+    display: none;
+}
+
+.filiere-icon {
+    font-size: 1.75rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
+    flex-shrink: 0;
+}
+
+.filiere-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+/* List Styling */
+.filiere-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-grow: 1;
+}
+
+.filiere-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    background: #f8fafc;
+    border: 1px solid transparent;
+}
+
+.filiere-list li:hover {
+    background: white;
+    border-color: #e2e8f0;
+    color: var(--primary-start);
+    transform: translateX(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.list-icon {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    transition: color 0.2s;
+}
+
+.filiere-list li:hover .list-icon {
+    color: var(--primary-start);
+}
+
+/* Card Overlays/accents */
+.card-overlay {
+    display: none;
+    /* Removing old overlay for cleaner look */
+}
+
+/* Color Themes mapped to grid items if needed, or uniform pro style */
+/* We will keep uniform professional blue-ish theme for consistency, or subtle variations */
+
+/* Unified Theme - Overriding mixed colors */
+.filiere-card.color-blue .filiere-icon,
+.filiere-card.color-red .filiere-icon,
+.filiere-card.color-orange .filiere-icon,
+.filiere-card.color-purple .filiere-icon,
+.filiere-card.color-pink .filiere-icon,
+.filiere-card.color-green .filiere-icon {
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+}
+
+/* Buttons */
+.center-btn {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.pulse-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: var(--radius-btn);
+    background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+    transition: all 0.3s;
+}
+
+.pulse-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4);
+}
+
+@media (min-width: 768px) {
+    .filieres-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .filieres-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}

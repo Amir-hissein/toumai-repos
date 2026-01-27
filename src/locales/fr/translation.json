@@ -1,0 +1,198 @@
+{
+    "header": {
+        "home": "Accueil",
+        "services": "Services",
+        "universities": "Universités",
+        "programs": "Filières",
+        "testimonials": "Témoignages",
+        "contact": "Contact",
+        "apply_now": "Postuler Maintenant"
+    },
+    "hero": {
+        "badge": "🎓 Votre porte d'entrée vers l'excellence",
+        "title_start": "Réalisez Vos Rêves",
+        "title_end": "d'Études en Turquie",
+        "description": "MG SERVİS vous accompagne vers les meilleures universités turques publiques et privées. Bénéficiez d'un suivi personnalisé de l'orientation jusqu'à votre installation.",
+        "cta_primary": "Commencer",
+        "cta_secondary": "En Savoir Plus",
+        "stats": {
+            "universities": "Universités Partenaires",
+            "students": "Étudiants Accompagnés",
+            "success": "Taux de Réussite",
+            "countries": "Pays Représentés"
+        }
+    },
+    "services": {
+        "subtitle": "Nos Services",
+        "title": "Un Accompagnement",
+        "title_highlight": "Complet",
+        "items": {
+            "consultation": {
+                "title": "Consultation Gratuite",
+                "desc": "Analyse approfondie de votre dossier académique et orientation vers les meilleures options."
+            },
+            "admission": {
+                "title": "Admission Garantie",
+                "desc": "Gestion complète de votre dossier de candidature pour maximiser vos chances."
+            },
+            "visa": {
+                "title": "Assistance Visa",
+                "desc": "Accompagnement étape par étape pour l'obtention de votre visa étudiant sans stress."
+            },
+            "housing": {
+                "title": "Logement",
+                "desc": "Aide à la recherche de logement (résidence ou appartement) avant votre arrivée."
+            },
+            "transfer": {
+                "title": "Accueil VIP",
+                "desc": "Accueil à l'aéroport et transfert privé jusqu'à votre lieu de résidence."
+            },
+            "support": {
+                "title": "Suivi 24/7",
+                "desc": "Une équipe dédiée disponible pour vous assister durant toute votre première année."
+            }
+        }
+    },
+    "universities": {
+        "subtitle": "Excellence Académique",
+        "title": "Nos Universités",
+        "title_highlight": "Partenaires",
+        "tabs": {
+            "public": "Universités Publiques",
+            "private": "Universités Privées"
+        },
+        "card": {
+            "details": "Voir Détails",
+            "location": "Localisation"
+        },
+        "view_all": "Voir Toutes les Universités",
+        "locations": {
+            "Istanbul": "Istanbul",
+            "Ankara": "Ankara",
+            "Izmir": "Izmir",
+            "Antalya": "Antalya",
+            "Bursa": "Bursa",
+            "Kocaeli": "Kocaeli",
+            "Sakarya": "Sakarya",
+            "Trabzon": "Trabzon",
+            "Erzurum": "Erzurum",
+            "Samsun": "Samsun",
+            "Adana": "Adana",
+            "Konya": "Konya",
+            "Kayseri": "Kayseri",
+            "Eskişehir": "Eskişehir",
+            "Mersin": "Mersin",
+            "Isparta": "Isparta",
+            "Çanakkale": "Çanakkale",
+            "Bolu": "Bolu",
+            "Muğla": "Muğla",
+            "Denizli": "Denizli"
+        }
+    },
+    "programs": {
+        "subtitle": "Votre Avenir Professionnel",
+        "title": "Explorez Nos",
+        "title_highlight": "Filières",
+        "categories": {
+            "engineering": "Ingénierie & Technologie",
+            "health": "Médecine & Santé",
+            "business": "Commerce & Économie",
+            "social": "Sciences Sociales",
+            "arts": "Arts & Design",
+            "science": "Sciences & Recherche"
+        },
+        "view_all": "Voir Toutes les Filières"
+    },
+    "testimonials": {
+        "subtitle": "Témoignages",
+        "title": "Ce Que Disent",
+        "title_highlight": "Nos Étudiants"
+    },
+    "process": {
+        "subtitle": "Processus Simple",
+        "title": "Comment",
+        "title_highlight": "Ça Marche ?",
+        "steps": {
+            "1": {
+                "title": "Consultation",
+                "desc": "Analyse de profil"
+            },
+            "2": {
+                "title": "Sélection",
+                "desc": "Choix des universités"
+            },
+            "3": {
+                "title": "Dossier",
+                "desc": "Préparation documents"
+            },
+            "4": {
+                "title": "Admission",
+                "desc": "Réception lettre"
+            },
+            "5": {
+                "title": "Visa & Départ",
+                "desc": "Formalités & Voyage"
+            }
+        }
+    },
+    "contact": {
+        "subtitle": "Contactez-nous",
+        "title_start": "Commencez Votre",
+        "title_end": "Aventure",
+        "desc": "Remplissez le formulaire et notre équipe vous contactera sous 24h",
+        "form": {
+            "name": "Nom Complet",
+            "email": "Email",
+            "phone": "Numéro de Téléphone",
+            "uni_type": "Type d'Université",
+            "public": "Publique",
+            "private": "Privée",
+            "program": "Filière Souhaitée",
+            "program_placeholder": "Rechercher une filière...",
+            "level": "Niveau Actuel",
+            "year": "Année Début",
+            "message": "Message (Optionnel)",
+            "consent": "J'accepte que mes données soient utilisées pour me contacter concernant ma demande",
+            "submit": "Envoyer ma Demande",
+            "success_title": "Message Envoyé !",
+            "success_desc": "Merci {{name}}, notre équipe vous contactera sous 24h."
+        }
+    },
+    "faq": {
+        "subtitle": "FAQ",
+        "title": "Questions",
+        "title_highlight": "Fréquentes",
+        "items": [
+            {
+                "q": "Quels sont les frais de service ?",
+                "a": "Nos frais varient selon le service. Contactez-nous pour un devis."
+            },
+            {
+                "q": "Le processus prend combien de temps ?",
+                "a": "Entre 1 et 3 semaines en général."
+            },
+            {
+                "q": "Faut-il parler turc ?",
+                "a": "Non, beaucoup de programmes sont en anglais."
+            },
+            {
+                "q": "Y a-t-il des bourses ?",
+                "a": "Oui, jusqu'à 100% dans certaines universités privées."
+            }
+        ]
+    },
+    "footer": {
+        "desc": "MG SERVİS est une agence spécialisée dans l'accompagnement des étudiants internationaux vers l'excellence académique en Turquie.",
+        "links_title": "Liens Rapides",
+        "services_title": "Nos Services",
+        "contact_title": "Contactez-nous",
+        "rights": "© {{year}} MG SERVİS - Tous droits réservés",
+        "legal": {
+            "terms": "Mentions Légales",
+            "privacy": "Politique de Confidentialité",
+            "cgu": "CGU"
+        },
+        "hours": "Lun-Ven 9h-18h",
+        "developed_by": "Développé par TOBEESOFT"
+    }
+}

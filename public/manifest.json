@@ -1,0 +1,21 @@
+{
+    "name": "MG SERVİS - Études en Turquie",
+    "short_name": "MG SERVİS",
+    "description": "Votre partenaire de confiance pour étudier en Turquie.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0ea5e9",
+    "icons": [
+        {
+            "src": "/vite.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/vite.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ]
+}
