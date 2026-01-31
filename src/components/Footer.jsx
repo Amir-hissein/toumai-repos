@@ -62,7 +62,7 @@ const Footer = () => {
                             <li><FaMapMarkerAlt className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> Istanbul, Türkiye</li>
                             <li><FaPhone className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> +90 539 911 59 60</li>
                             <li><FaEnvelope className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> contact@toumaiedu.com</li>
-                            <li><FaClock className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? '0.5rem' : 0 }} /> {t('footer.hours')}</li>
+
                         </ul>
                     </div>
 
