@@ -101,9 +101,10 @@ const Header = () => {
                     {isMobileMenuOpen && (
                         <motion.div
                             className="mobile-menu"
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
                         >
                             {navLinks.map(link => (
                                 <a key={link.href} href={link.href} className="mobile-link" onClick={() => setIsMobileMenuOpen(false)}>{link.name}</a>
