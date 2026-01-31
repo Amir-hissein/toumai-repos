@@ -86,7 +86,7 @@ const Header = () => {
                         </AnimatePresence>
                     </div>
 
-                    <a href="https://wa.me/905399115960?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20vos%20services." target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-btn">{t('header.apply_now')}</a>
+                    <a href="#contact" className="btn btn-primary cta-btn">{t('header.apply_now')}</a>
                 </div>
 
                 {/* Mobile Toggle */}
