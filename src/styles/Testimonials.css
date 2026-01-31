@@ -186,9 +186,10 @@
 
     .testimonial-card {
         min-width: 260px;
-        /* Comparable to university cards but enough for text */
         max-width: 260px;
-        padding: 1.25rem;
+        height: 380px;
+        /* Fixed height to ensure uniformity */
+        padding: 1.5rem;
         margin-right: 0;
         background: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -198,32 +199,48 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* Distribute content */
+        overflow: hidden;
+        /* Ensure nothing spills out */
     }
 
     .testimonial-text {
         font-size: 0.85rem;
-        /* Smaller text for compact card */
-        margin-bottom: 1rem;
-        line-height: 1.4;
+        margin-bottom: 0;
+        /* Remove bottom margin to let flex space-between handle it */
+        line-height: 1.5;
         display: -webkit-box;
-        -webkit-line-clamp: 5;
-        /* Limit text lines */
+        -webkit-line-clamp: 7;
+        /* Increased lines since card is fixed height */
+        line-clamp: 7;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        /* Break long words */
+        hyphens: auto;
+        /* Hyphenate if needed */
+        flex-grow: 1;
+        /* Allow text specific space */
+        display: flex;
+        /* Reset display for alignment if needed, but webkit-box requires it. Keep webkit-box. */
+        display: -webkit-box;
     }
 
     .testimonial-author {
         flex-direction: column;
         text-align: center;
         gap: 0.5rem;
+        margin-top: 1rem;
         margin-bottom: 0.5rem;
+        flex-shrink: 0;
+        /* Don't shrink author info */
     }
 
     .author-img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         border-width: 2px;
+        margin: 0 auto;
     }
 
     .quote-icon {
@@ -232,10 +249,17 @@
         position: static;
         color: var(--secondary);
         opacity: 0.3;
+        flex-shrink: 0;
     }
 
     .author-info h4 {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 210px;
+        /* Constrain width */
+        margin: 0 auto;
     }
 
     .author-info p {
@@ -247,6 +271,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 100%;
+        max-width: 210px;
+        margin: 0 auto;
     }
 }
