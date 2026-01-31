@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaTwitter, FaGraduationCap, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaTiktok, FaGraduationCap, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import '../styles/Footer.css';
 
@@ -23,12 +23,11 @@ const Footer = () => {
                         <p className="footer-desc">
                             {t('footer.desc')}
                         </p>
-                        <div className="social-links">
-                            <a href="#" className="social-link"><FaFacebook /></a>
-                            <a href="#" className="social-link"><FaInstagram /></a>
-                            <a href="#" className="social-link"><FaLinkedin /></a>
-                            <a href="#" className="social-link"><FaWhatsapp /></a>
-                            <a href="#" className="social-link"><FaTwitter /></a>
+                        <div className="social-links desktop-socials">
+                            <a href="https://www.facebook.com/share/1CEVyC5o9o/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="social-link"><FaFacebook /></a>
+                            <a href="https://www.instagram.com/toumaiedu?igsh=bzZzemcyNmdrYXhy" target="_blank" rel="noopener noreferrer" className="social-link"><FaInstagram /></a>
+                            <a href="https://www.linkedin.com/in/touma%C3%AF-educaion-4247973a9" target="_blank" rel="noopener noreferrer" className="social-link"><FaLinkedin /></a>
+                            <a href="https://www.tiktok.com/@toumaiedu" target="_blank" rel="noopener noreferrer" className="social-link"><FaTiktok /></a>
                         </div>
                     </div>
 
@@ -61,10 +60,18 @@ const Footer = () => {
                         <h4>{t('footer.contact_title')}</h4>
                         <ul className="contact-info">
                             <li><FaMapMarkerAlt className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> Istanbul, Türkiye</li>
-                            <li><FaPhone className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> +90 555 123 45 67</li>
-                            <li><FaEnvelope className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> contact@mgservis.com</li>
+                            <li><FaPhone className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> +90 539 911 59 60</li>
+                            <li><FaEnvelope className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? 0 : '0.5rem' }} /> contact@toumaiedu.com</li>
                             <li><FaClock className="contact-icon" style={{ marginLeft: i18n.dir() === 'rtl' ? '0.5rem' : 0, marginRight: i18n.dir() === 'rtl' ? '0.5rem' : 0 }} /> {t('footer.hours')}</li>
                         </ul>
+                    </div>
+
+                    {/* Mobile Social Links (Appears here on mobile) */}
+                    <div className="social-links mobile-socials">
+                        <a href="https://www.facebook.com/share/1CEVyC5o9o/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="social-link"><FaFacebook /></a>
+                        <a href="https://www.instagram.com/toumaiedu?igsh=bzZzemcyNmdrYXhy" target="_blank" rel="noopener noreferrer" className="social-link"><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/in/touma%C3%AF-educaion-4247973a9" target="_blank" rel="noopener noreferrer" className="social-link"><FaLinkedin /></a>
+                        <a href="https://www.tiktok.com/@toumaiedu" target="_blank" rel="noopener noreferrer" className="social-link"><FaTiktok /></a>
                     </div>
                 </div>
 

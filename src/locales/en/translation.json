@@ -12,7 +12,7 @@
         "badge": "🎓 Your gateway to excellence",
         "title_start": "Achieve Your Dreams",
         "title_end": "of Studying in Turkey",
-        "description": "Your best guide to study at the best Turkish universities, public and private.",
+        "description": "TOUMAİ guides you to the best public and private Turkish universities. Benefit from personalized support from orientation to your settlement.",
         "cta_primary": "Start Now",
         "cta_secondary": "Learn More",
         "stats": {
@@ -28,35 +28,35 @@
         "title_highlight": "Guidance",
         "items": {
             "consultation": {
-                "title": "Free Consultation",
-                "desc": "In-depth analysis of your academic profile and orientation towards the best options."
+                "title": "Free Academic Consultation",
+                "desc": "We provide a comprehensive and precise analysis of your academic file, evaluating your strengths and development opportunities to guide you toward the best study options for your ambitions."
             },
             "admission": {
-                "title": "Guaranteed Admission",
-                "desc": "Complete management of your application file to maximize your chances."
+                "title": "University Admission",
+                "desc": "We offer complete management of your application file at Turkish universities, from document preparation to follow-up with relevant institutions to maximize your admission chances."
             },
             "visa": {
-                "title": "Visa Assistance",
-                "desc": "Step-by-step support for obtaining your student visa stress-free."
+                "title": "Student Visa",
+                "desc": "Complete step-by-step guidance to obtain your student visa with ease, from file preparation and requirements to interview guidance and follow-up until visa issuance."
             },
             "housing": {
-                "title": "Accommodation",
-                "desc": "Help finding housing (residence or apartment) before your arrival."
+                "title": "Student Housing",
+                "desc": "We help you find suitable accommodation before arriving in Turkey, whether student residence or private apartment, considering location, budget, and proximity to university."
             },
             "transfer": {
                 "title": "VIP Welcome",
-                "desc": "Airport pickup and private transfer to your place of residence."
+                "desc": "Premium airport welcome service with private and comfortable transfer to your residence, ensuring a safe arrival and an elegant start to your academic journey in Turkey."
             },
             "support": {
                 "title": "24/7 Support",
-                "desc": "A dedicated team available to assist you throughout your first year."
+                "desc": "A specialized team available around the clock to assist you and answer your questions during your first academic year, supporting you in all academic and administrative aspects."
             }
         }
     },
     "universities": {
         "subtitle": "Academic Excellence",
-        "title": "Our Partner",
-        "title_highlight": "Universities",
+        "title": "Our",
+        "title_highlight": "Our Partners",
         "tabs": {
             "public": "Public Universities",
             "private": "Private Universities"
@@ -148,14 +148,27 @@
             "public": "Public",
             "private": "Private",
             "program": "Desired Program",
-            "program_placeholder": "Search for a program...",
+            "program_placeholder": "Select a program...",
             "level": "Current Level",
             "year": "Start Year",
             "message": "Message (Optional)",
+            "message_placeholder": "Describe your study plan...",
             "consent": "I agree that my data will be used to contact me regarding my request",
             "submit": "Send My Request",
-            "success_title": "Message Sent!",
-            "success_desc": "Thank you {{name}}, our team will contact you within 24h."
+            "success_title": "Request Sent!",
+            "success_desc": "Thank you {{name}}, your request has been sent via email. We will reply within 24h.",
+            "new_request": "New Request",
+            "error_required": "This field is required",
+            "error_email": "Invalid email",
+            "error_consent": "You must accept the terms",
+            "levels": {
+                "lycee": "High School (Final Year)",
+                "bac": "High School Graduate",
+                "licence_cours": "Bachelor In Progress",
+                "licence_ok": "Bachelor Degree",
+                "master_cours": "Master In Progress",
+                "master_ok": "Master Degree"
+            }
         }
     },
     "faq": {

@@ -12,7 +12,7 @@
         "badge": "🎓 Votre porte d'entrée vers l'excellence",
         "title_start": "Réalisez Vos Rêves",
         "title_end": "d'Études en Turquie",
-        "description": "Votre meilleur guide pour étudier dans les meilleures universités turques, publiques et privées.",
+        "description": "TOUMAİ vous accompagne vers les meilleures universités turques publiques et privées. Bénéficiez d'un suivi personnalisé de l'orientation jusqu'à votre installation.",
         "cta_primary": "Commencer",
         "cta_secondary": "En Savoir Plus",
         "stats": {
@@ -28,35 +28,35 @@
         "title_highlight": "Complet",
         "items": {
             "consultation": {
-                "title": "Consultation Gratuite",
-                "desc": "Analyse approfondie de votre dossier académique et orientation vers les meilleures options."
+                "title": "Consultation Académique Gratuite",
+                "desc": "Nous vous offrons une analyse complète et précise de votre dossier académique, avec une évaluation de vos points forts et opportunités de développement, pour vous orienter vers les meilleures options d'études."
             },
             "admission": {
-                "title": "Admission Garantie",
-                "desc": "Gestion complète de votre dossier de candidature pour maximiser vos chances."
+                "title": "Admission Universitaire",
+                "desc": "Nous assurons une gestion intégrale de votre dossier de candidature, de la préparation des documents jusqu'au suivi avec les universités, pour maximiser vos chances d'admission."
             },
             "visa": {
-                "title": "Assistance Visa",
-                "desc": "Accompagnement étape par étape pour l'obtention de votre visa étudiant sans stress."
+                "title": "Visa Étudiant",
+                "desc": "Accompagnement complet étape par étape pour l'obtention de votre visa étudiant, de la préparation du dossier à l'entretien jusqu'à la délivrance du visa."
             },
             "housing": {
-                "title": "Logement",
-                "desc": "Aide à la recherche de logement (résidence ou appartement) avant votre arrivée."
+                "title": "Logement Étudiant",
+                "desc": "Nous vous aidons à trouver le logement idéal avant votre arrivée en Turquie, résidence ou appartement, en tenant compte de l'emplacement, du budget et de la proximité avec l'université."
             },
             "transfer": {
                 "title": "Accueil VIP",
-                "desc": "Accueil à l'aéroport et transfert privé jusqu'à votre lieu de résidence."
+                "desc": "Service d'accueil premium à l'aéroport avec transfert privé et confortable jusqu'à votre lieu de résidence, pour une arrivée sereine et un début d'aventure réussi."
             },
             "support": {
-                "title": "Suivi 24/7",
-                "desc": "Une équipe dédiée disponible pour vous assister durant toute votre première année."
+                "title": "Support 24/7",
+                "desc": "Une équipe spécialisée disponible à tout moment pour vous accompagner et répondre à vos questions durant votre première année académique et administrative."
             }
         }
     },
     "universities": {
         "subtitle": "Excellence Académique",
-        "title": "Nos Universités",
-        "title_highlight": "Partenaires",
+        "title": "Nos",
+        "title_highlight": "Nos Partenaires",
         "tabs": {
             "public": "Universités Publiques",
             "private": "Universités Privées"
@@ -148,14 +148,27 @@
             "public": "Publique",
             "private": "Privée",
             "program": "Filière Souhaitée",
-            "program_placeholder": "Rechercher une filière...",
+            "program_placeholder": "Sélectionnez une filière...",
             "level": "Niveau Actuel",
             "year": "Année Début",
             "message": "Message (Optionnel)",
+            "message_placeholder": "Décrivez votre projet d'études...",
             "consent": "J'accepte que mes données soient utilisées pour me contacter concernant ma demande",
             "submit": "Envoyer ma Demande",
-            "success_title": "Message Envoyé !",
-            "success_desc": "Merci {{name}}, notre équipe vous contactera sous 24h."
+            "success_title": "Demande Envoyée !",
+            "success_desc": "Merci {{name}}, votre demande a été envoyée par email. Nous vous répondrons sous 24h.",
+            "new_request": "Nouvelle Demande",
+            "error_required": "Ce champ est obligatoire",
+            "error_email": "Email invalide",
+            "error_consent": "Vous devez accepter les conditions",
+            "levels": {
+                "lycee": "Lycée (Terminale)",
+                "bac": "Baccalauréat obtenu",
+                "licence_cours": "Licence en cours",
+                "licence_ok": "Licence obtenue",
+                "master_cours": "Master en cours",
+                "master_ok": "Master obtenu"
+            }
         }
     },
     "faq": {

@@ -316,3 +316,29 @@ input:focus {
         transform: rotate(360deg);
     }
 }
+
+/* Error States */
+.input-wrapper.error input,
+.phone-input-wrapper.error,
+select.error,
+textarea.error,
+.checkbox-container.error {
+    border-color: #ef4444 !important;
+    background-color: #fef2f2;
+}
+
+.input-wrapper.error .input-icon {
+    color: #ef4444;
+}
+
+.error-text {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: block;
+    font-weight: 500;
+}
+
+.consent-error {
+    margin-left: 0.5rem;
+}

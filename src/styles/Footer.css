@@ -93,6 +93,29 @@
     gap: 1rem;
 }
 
+/* Mobile Socials (Only visible on mobile) */
+.mobile-socials {
+    display: flex;
+    justify-content: center;
+    /* Centered on mobile */
+    margin-top: 1rem;
+}
+
+/* Desktop Socials (Hidden on mobile) */
+.desktop-socials {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mobile-socials {
+        display: none;
+    }
+
+    .desktop-socials {
+        display: flex;
+    }
+}
+
 .social-link {
     width: 36px;
     height: 36px;

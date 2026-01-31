@@ -46,10 +46,6 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                 >
-                    <motion.div variants={itemVariants} className="hero-brand-name">
-                        <span className="brand-text">TOUMAİ</span>
-                    </motion.div>
-
                     <motion.h1 variants={itemVariants} className="hero-title">
                         {t('hero.title_start')} <br />
                         <span className="gradient-text-hero">{t('hero.title_end')}</span>
@@ -80,12 +76,12 @@ const Hero = () => {
                         transition={{ delay: 1, duration: 0.8 }}
                     >
                         <div className="mini-stat">
-                            <span className="ms-number">150+</span>
+                            <span className="ms-number">45+</span>
                             <span className="ms-label">{t('hero.stats.universities')}</span>
                         </div>
                         <div className="ms-divider"></div>
                         <div className="mini-stat">
-                            <span className="ms-number">5k+</span>
+                            <span className="ms-number">500+</span>
                             <span className="ms-label">{t('hero.stats.students')}</span>
                         </div>
                         <div className="ms-divider"></div>

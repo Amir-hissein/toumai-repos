@@ -1,270 +1,116 @@
 .uni-section {
     background-color: var(--neutral-light);
-    /* Very light slate background for contrast with white cards */
-    padding: 6rem 0;
+    padding: 5rem 0;
     position: relative;
     overflow: hidden;
 }
 
-/* Background decoration elements */
-.uni-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    pointer-events: none;
+.uni-section .section-header {
+    margin-bottom: 6rem;
 }
 
-/* Tabs */
-.tabs-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
-    position: relative;
-    z-index: 2;
+.uni-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
 }
 
-.tabs {
-    background: white;
-    padding: 0.5rem;
-    border-radius: 99px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-    display: flex;
-    position: relative;
-    border: 1px solid rgba(226, 232, 240, 0.8);
-}
-
-.tab-btn {
-    position: relative;
-    border: none;
-    background: transparent;
-    width: 180px;
-    /* Fixed width for perfect alignment */
-    padding: 0.75rem 0;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--neutral-gray);
-    cursor: pointer;
-    z-index: 2;
-    transition: color 0.3s ease;
-    border-radius: 99px;
-    white-space: nowrap;
-    text-align: center;
-}
-
-.tab-btn.active {
-    color: white;
-}
-
-.tab-indicator {
-    position: absolute;
-    top: 0.5rem;
-    bottom: 0.5rem;
-    left: 0.5rem;
-    width: 180px;
-    /* Match button width */
+.uni-section .title-underline {
+    width: 80px;
+    height: 4px;
     background: var(--secondary);
-    border-radius: 99px;
-    z-index: 1;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
-.tab-indicator.left {
-    transform: translateX(0);
-}
-
-.tab-indicator.right {
-    transform: translateX(100%);
-}
-
-/* Grid */
-.uni-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
-    /* Reduced gap */
-    margin-bottom: 4rem;
+/* Carousel Wrapper */
+.uni-carousel-wrapper {
     position: relative;
-    z-index: 2;
-}
-
-/* Card */
-.uni-card {
-    background: white;
-    border-radius: 16px;
-    /* Slightly reduced radius */
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    height: 100%;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    width: 100%;
     overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
-.uni-card:hover {
-    transform: translateY(-5px);
-    /* Reduced hover lift */
-    box-shadow: 0 15px 30px -5px rgba(49, 46, 129, 0.12);
-    border-color: rgba(79, 70, 229, 0.3);
-}
-
-.uni-content-wrapper {
-    padding: 1.5rem 1.25rem;
-    /* Reduced padding from 2.5rem */
+/* Carousel Container with CSS Animation */
+.uni-carousel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
+    gap: 2rem;
+    width: max-content;
+    animation: scroll 20s linear infinite;
 }
 
-/* Icon Box */
-.uni-icon-box {
-    width: 60px;
-    /* Reduced from 80px */
-    height: 60px;
-    /* Reduced from 80px */
-    background: var(--neutral-light);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    /* Reduced margin */
-    color: var(--secondary);
-    font-size: 1.75rem;
-    /* Reduced font size */
-    transition: all 0.4s ease;
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.uni-card:hover .uni-icon-box {
-    transform: scale(1.1) rotate(6deg);
-    background: var(--secondary);
-    color: white;
-    box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4);
+/* Pause animation on hover */
+.uni-carousel:hover {
+    animation-play-state: paused;
 }
 
-/* Typography */
-.uni-name {
-    font-size: 1.1rem;
-    /* Reduced from 1.25rem */
-    font-weight: 700;
-    color: var(--neutral-dark);
-    margin-bottom: 1rem;
-    /* Reduced margin */
-    line-height: 1.35;
-    transition: color 0.3s ease;
-}
-
-.uni-card:hover .uni-name {
-    color: var(--secondary);
-}
-
-.uni-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    /* Reduced gap */
-    width: 100%;
-    margin-bottom: 1.25rem;
-    /* Reduced margin */
-    border-top: 1px solid #f1f5f9;
-    padding-top: 1rem;
-    /* Reduced padding */
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    color: var(--neutral-gray);
-    font-size: 0.9rem;
-    /* Slightly reduced font size */
-    font-weight: 500;
-}
-
-.info-icon {
-    color: var(--secondary);
-    opacity: 0.8;
-}
-
-.info-icon.star {
-    color: var(--accent);
-}
-
-/* Action Button */
-.uni-action-btn {
-    margin-top: auto;
-    width: 100%;
-    padding: 0.75rem;
-    /* Reduced padding */
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
+/* University Logo Card */
+.uni-logo-card {
+    flex-shrink: 0;
+    width: 280px;
+    height: 180px;
     background: white;
-    color: var(--neutral-dark);
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    overflow: hidden;
 }
 
-.uni-action-btn svg {
-    transition: transform 0.3s ease;
+.uni-logo-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--secondary);
+    transform: scale(1.05) translateY(-5px);
 }
 
-.uni-card:hover .uni-action-btn {
-    background: var(--secondary);
-    border-color: var(--secondary);
-    color: white;
-}
-
-.uni-card:hover .uni-action-btn svg {
-    transform: translateX(4px);
-}
-
-/* "View All" Button at bottom */
-.center-btn {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-}
-
-.center-btn .btn-outline {
-    border-radius: 99px;
-    padding: 1rem 3rem;
-    border-width: 2px;
-    font-weight: 700;
+.uni-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* Responsive */
-@media (min-width: 768px) {
-    .uni-grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+    .uni-section {
+        padding: 3rem 0;
+    }
+
+    .uni-logo-card {
+        width: 200px;
+        height: 130px;
+    }
+
+    .uni-carousel {
+        gap: 1rem;
     }
 }
 
-@media (min-width: 1024px) {
-    .uni-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+/* RTL Support */
+[dir="rtl"] .uni-carousel {
+    animation: scroll-rtl 20s linear infinite;
 }
 
-@media (max-width: 500px) {
+@keyframes scroll-rtl {
+    0% {
+        transform: translateX(0);
+    }
 
-    .tab-btn,
-    .tab-indicator {
-        width: 140px;
+    100% {
+        transform: translateX(50%);
     }
 }
