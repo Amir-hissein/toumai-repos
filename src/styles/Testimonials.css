@@ -163,17 +163,17 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
     .testimonials-section {
-        padding: 3rem 0;
+        padding: 4rem 0;
+        /* Moderate padding */
     }
 
     .testimonials-carousel {
-        padding: 0 1rem 2rem 1rem;
-        gap: 1rem;
+        padding: 0 1.5rem 2rem 1.5rem;
+        gap: 1.5rem;
         align-items: stretch;
         justify-content: flex-start;
-        /* Align left to allow scrolling from start */
     }
 
     .nav-btn {
@@ -181,14 +181,14 @@
     }
 
     .carousel-controls {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 
     .testimonial-card {
         min-width: 260px;
+        /* Default for mobile */
         max-width: 260px;
         height: 380px;
-        /* Fixed height to ensure uniformity */
         padding: 1.5rem;
         margin-right: 0;
         background: white;
@@ -200,29 +200,47 @@
         flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
-        /* Ensure nothing spills out */
+    }
+
+    /* Tablet Specific Adjustments (768px - 1280px) */
+    @media (min-width: 768px) {
+        .testimonial-card {
+            min-width: 350px;
+            /* Larger cards for tablet */
+            max-width: 350px;
+            height: 420px;
+            /* Taller */
+            padding: 2rem;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            /* Restore font size */
+            -webkit-line-clamp: 8;
+            /* More lines visible */
+            line-clamp: 8;
+        }
+
+        .author-img {
+            width: 60px;
+            height: 60px;
+        }
     }
 
     .testimonial-text {
         font-size: 0.85rem;
         margin-bottom: 0;
-        /* Remove bottom margin to let flex space-between handle it */
         line-height: 1.5;
         display: -webkit-box;
         -webkit-line-clamp: 7;
-        /* Increased lines since card is fixed height */
         line-clamp: 7;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
         word-wrap: break-word;
-        /* Break long words */
         hyphens: auto;
-        /* Hyphenate if needed */
         flex-grow: 1;
-        /* Allow text specific space */
         display: flex;
-        /* Reset display for alignment if needed, but webkit-box requires it. Keep webkit-box. */
         display: -webkit-box;
     }
 
@@ -233,7 +251,6 @@
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         flex-shrink: 0;
-        /* Don't shrink author info */
     }
 
     .author-img {
@@ -258,7 +275,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 210px;
-        /* Constrain width */
         margin: 0 auto;
     }
 

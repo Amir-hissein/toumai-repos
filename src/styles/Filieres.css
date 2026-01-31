@@ -189,7 +189,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1280px) {
     .filieres-section {
         padding: 4rem 0;
     }
@@ -206,6 +206,7 @@
 @media (min-width: 1024px) {
     .filieres-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+        gap: 2rem;
+        /* Reduced gap for smaller desktops */
     }
 }

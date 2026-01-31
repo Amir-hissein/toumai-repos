@@ -366,7 +366,7 @@
 }
 
 /* Desktop Specific (Larger) */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     .hero-container-split {
         grid-template-columns: 1.2fr 0.8fr;
         gap: 3rem;
