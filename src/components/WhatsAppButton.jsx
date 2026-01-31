@@ -7,6 +7,16 @@ const WhatsAppButton = () => {
     const message = "Bonjour, je souhaite avoir plus d'informations sur vos services.";
 
     const handleClick = () => {
+        // Track WhatsApp click
+        import("react-ga4").then(module => {
+            const ReactGA = module.default;
+            ReactGA.event({
+                category: "Contact",
+                action: "Click WhatsApp",
+                label: "Floating Button"
+            });
+        });
+
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };

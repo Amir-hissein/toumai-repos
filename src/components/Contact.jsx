@@ -109,6 +109,17 @@ const Contact = () => {
         )
             .then((result) => {
                 console.log('Email sent:', result.text);
+
+                // Track successful form submission
+                import("react-ga4").then(module => {
+                    const ReactGA = module.default;
+                    ReactGA.event({
+                        category: "Contact",
+                        action: "Submit Form",
+                        label: "Contact Form"
+                    });
+                });
+
                 setIsSubmitting(false);
                 setIsSuccess(true);
             }, (error) => {
