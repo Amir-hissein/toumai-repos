@@ -182,11 +182,17 @@ const Testimonials = () => {
     const currentTestimonials = testimonialsData[i18n.language] || testimonialsData.fr;
 
     const nextTestimonial = () => {
-        setActiveIndex((prev) => (prev + 1) % currentTestimonials.length);
+        const container = document.getElementById('testimonials-carousel');
+        if (container) {
+            container.scrollBy({ left: container.offsetWidth, behavior: 'smooth' });
+        }
     };
 
     const prevTestimonial = () => {
-        setActiveIndex((prev) => (prev - 1 + currentTestimonials.length) % currentTestimonials.length);
+        const container = document.getElementById('testimonials-carousel');
+        if (container) {
+            container.scrollBy({ left: -container.offsetWidth, behavior: 'smooth' });
+        }
     };
 
     return (
@@ -198,37 +204,57 @@ const Testimonials = () => {
                     <div className="title-underline"></div>
                 </div>
 
-                <div className="testimonials-carousel" style={{ direction: 'ltr' }}> {/* Keep Carousel LTR for consistent sliding */}
-                    <button className="nav-btn prev" onClick={prevTestimonial}><FaChevronLeft /></button>
+                <div
+                    className="testimonials-carousel"
+                    id="testimonials-carousel"
+                    style={{ direction: 'ltr' }}
+                    onScroll={(e) => {
+                        const scrollLeft = e.target.scrollLeft;
+                        const width = e.target.offsetWidth;
+                        const index = Math.round(scrollLeft / width);
+                        setActiveIndex(index);
+                    }}
+                >
+                    {currentTestimonials.map((testimonial) => (
+                        <div key={testimonial.id} className="testimonial-card">
+                            <div className="quote-icon"><FaQuoteLeft /></div>
+                            <p className="testimonial-text">"{testimonial.text}"</p>
 
-                    <div className="testimonial-card">
-                        <div className="quote-icon"><FaQuoteLeft /></div>
-                        <p className="testimonial-text">"{currentTestimonials[activeIndex].text}"</p>
-
-                        <div className="testimonial-author">
-                            <img src={currentTestimonials[activeIndex].image} alt={currentTestimonials[activeIndex].name} className="author-img" />
-                            <div className="author-info">
-                                <h4>{currentTestimonials[activeIndex].name}</h4>
-                                <p>{currentTestimonials[activeIndex].country}</p>
-                                <span className="author-uni">{currentTestimonials[activeIndex].uni} - {currentTestimonials[activeIndex].major}</span>
+                            <div className="testimonial-author">
+                                <img src={testimonial.image} alt={testimonial.name} className="author-img" />
+                                <div className="author-info">
+                                    <h4>{testimonial.name}</h4>
+                                    <p>{testimonial.country}</p>
+                                    <span className="author-uni">{testimonial.uni} - {testimonial.major}</span>
+                                </div>
+                            </div>
+                            <div className="stars">
+                                {[1, 2, 3, 4, 5].map(i => <FaStar key={i} />)}
                             </div>
                         </div>
-                        <div className="stars">
-                            {[1, 2, 3, 4, 5].map(i => <FaStar key={i} />)}
-                        </div>
-                    </div>
-
-                    <button className="nav-btn next" onClick={nextTestimonial}><FaChevronRight /></button>
+                    ))}
                 </div>
 
-                <div className="carousel-dots">
-                    {currentTestimonials.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`dot ${index === activeIndex ? 'active' : ''}`}
-                            onClick={() => setActiveIndex(index)}
-                        ></span>
-                    ))}
+                <div className="carousel-controls">
+                    <button className="nav-btn prev" onClick={prevTestimonial}><FaChevronLeft /></button>
+                    <div className="carousel-dots">
+                        {currentTestimonials.map((_, index) => (
+                            <span
+                                key={index}
+                                className={`dot ${index === activeIndex ? 'active' : ''}`}
+                                onClick={() => {
+                                    const container = document.getElementById('testimonials-carousel');
+                                    if (container) {
+                                        container.scrollTo({
+                                            left: index * container.offsetWidth,
+                                            behavior: 'smooth'
+                                        });
+                                    }
+                                }}
+                            ></span>
+                        ))}
+                    </div>
+                    <button className="nav-btn next" onClick={nextTestimonial}><FaChevronRight /></button>
                 </div>
             </div>
         </section>
