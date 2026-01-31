@@ -163,10 +163,130 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 3rem 0;
+    }
+
+    .testimonials-carousel {
+        padding: 0 1rem 2rem 1rem;
+        gap: 1rem;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .carousel-controls {
+        margin-top: 1rem;
+    }
+
+    /* Mobile Specific: Ultra Compact (University Card Style) */
+    .testimonial-card {
+        min-width: 200px;
+        /* Exact match to University Card width */
+        max-width: 200px;
+        height: 250px;
+        /* Very compact height */
+        padding: 1rem;
+        margin-right: 0;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:active {
+        transform: scale(0.96);
+    }
+
+    .testimonial-text {
+        font-size: 0.75rem;
+        /* Smaller text for compact card */
+        margin-bottom: 0;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        hyphens: auto;
+        flex-grow: 1;
+        color: #334155;
+    }
+
+    .testimonial-author {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+        /* Reduced margin */
+        padding-top: 0.5rem;
+        border-top: 1px solid #f1f5f9;
+        width: 100%;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .author-img {
+        width: 36px;
+        height: 36px;
+        border-width: 2px;
+        margin: 0;
+    }
+
+    .quote-icon {
+        display: none;
+    }
+
+    .author-info {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .author-info h4 {
+        font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        color: var(--neutral-dark);
+    }
+
+    .author-info p {
+        display: none;
+    }
+
+    .author-uni {
+        font-size: 0.65rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        color: var(--secondary);
+        font-weight: 600;
+    }
+
+    .stars {
+        display: none;
+    }
+}
+
+/* Tablet / Small Desktop (769px - 1280px) */
+@media (min-width: 769px) and (max-width: 1280px) {
     .testimonials-section {
         padding: 4rem 0;
-        /* Moderate padding */
     }
 
     .testimonials-carousel {
@@ -185,109 +305,72 @@
     }
 
     .testimonial-card {
-        min-width: 260px;
-        /* Default for mobile */
-        max-width: 260px;
-        height: 380px;
+        min-width: 280px;
+        /* Comfortable Tablet Width */
+        max-width: 280px;
+        height: 340px;
         padding: 1.5rem;
-        margin-right: 0;
         background: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        border-radius: 12px;
-        opacity: 1;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
     }
 
-    /* Tablet Specific Adjustments (768px - 1280px) */
-    @media (min-width: 768px) {
-        .testimonial-card {
-            min-width: 350px;
-            /* Larger cards for tablet */
-            max-width: 350px;
-            height: 420px;
-            /* Taller */
-            padding: 2rem;
-        }
-
-        .testimonial-text {
-            font-size: 1rem;
-            /* Restore font size */
-            -webkit-line-clamp: 8;
-            /* More lines visible */
-            line-clamp: 8;
-        }
-
-        .author-img {
-            width: 60px;
-            height: 60px;
-        }
-    }
-
     .testimonial-text {
-        font-size: 0.85rem;
-        margin-bottom: 0;
+        font-size: 0.9rem;
         line-height: 1.5;
         display: -webkit-box;
-        -webkit-line-clamp: 7;
-        line-clamp: 7;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-        hyphens: auto;
-        flex-grow: 1;
-        display: flex;
-        display: -webkit-box;
     }
 
     .testimonial-author {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
         margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid #f1f5f9;
         flex-shrink: 0;
     }
 
     .author-img {
-        width: 50px;
-        height: 50px;
-        border-width: 2px;
-        margin: 0 auto;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
     }
 
     .quote-icon {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-        position: static;
-        color: var(--secondary);
-        opacity: 0.3;
-        flex-shrink: 0;
+        display: none;
+    }
+
+    .stars {
+        display: none;
     }
 
     .author-info h4 {
         font-size: 0.95rem;
+        margin: 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 210px;
-        margin: 0 auto;
     }
 
     .author-info p {
-        font-size: 0.8rem;
+        display: none;
     }
 
     .author-uni {
         font-size: 0.75rem;
+        margin: 0;
+        color: var(--secondary);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 210px;
-        margin: 0 auto;
     }
 }
