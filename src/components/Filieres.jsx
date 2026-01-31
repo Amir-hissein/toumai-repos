@@ -86,6 +86,11 @@ const Filieres = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }
     };
 
+    const [showAll, setShowAll] = React.useState(false);
+
+    // Show only first 3 items on mobile/desktop initially, or all if showAll is true
+    const visibleCategories = showAll ? categories : categories.slice(0, 3);
+
     return (
         <section id="filieres" className="section filieres-section">
             <motion.div
@@ -102,7 +107,7 @@ const Filieres = () => {
                 </div>
 
                 <div className="filieres-grid">
-                    {categories.map((cat, idx) => (
+                    {visibleCategories.map((cat, idx) => (
                         <motion.div
                             className={`filiere-card color-${cat.color}`}
                             key={idx}
@@ -125,9 +130,18 @@ const Filieres = () => {
                         </motion.div>
                     ))}
                 </div>
-                <div className="center-btn" style={{ marginTop: '3rem' }}>
-                    <motion.button variants={itemVariants} className="btn btn-primary pulse-btn">{t('programs.view_all')}</motion.button>
-                </div>
+
+                {!showAll && (
+                    <div className="center-btn" style={{ marginTop: '3rem' }}>
+                        <motion.button
+                            variants={itemVariants}
+                            className="btn btn-primary pulse-btn"
+                            onClick={() => setShowAll(true)}
+                        >
+                            {t('programs.view_all')}
+                        </motion.button>
+                    </div>
+                )}
             </motion.div>
         </section>
     );
