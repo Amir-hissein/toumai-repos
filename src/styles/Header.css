@@ -256,6 +256,12 @@
     /* Prevent line break */
 }
 
+@media (max-width: 1024px) {
+    .logo-text {
+        display: none;
+    }
+}
+
 .header.scrolled .logo-text {
     color: var(--neutral-dark);
 }
