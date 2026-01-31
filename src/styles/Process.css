@@ -151,3 +151,32 @@
     color: var(--neutral-gray);
     line-height: 1.6;
 }
+
+/* RTL Support */
+[dir="rtl"] .timeline-items {
+    text-align: right;
+}
+
+[dir="rtl"] .step-number {
+    right: auto;
+    left: 0;
+}
+
+@media (min-width: 900px) {
+    [dir="rtl"] .step-number {
+        left: calc(50% - 40px);
+        right: auto;
+    }
+
+    [dir="rtl"] .timeline-item::before {
+        left: auto;
+        right: 50%;
+    }
+}
+
+@media (max-width: 899px) {
+    [dir="rtl"] .timeline-items::before {
+        left: auto;
+        right: 40px;
+    }
+}
