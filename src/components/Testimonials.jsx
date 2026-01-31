@@ -15,7 +15,7 @@ const Testimonials = () => {
                 country: "Maroc",
                 uni: "Koç University",
                 major: "Génie Informatique",
-                text: "Grâce à MG SERVİS, j'ai été admis à Koç University. L'équipe a géré toutes mes démarches administratives.",
+                text: "Grâce à TOUMAİ, j'ai été admis à Koç University. L'équipe a géré toutes mes démarches administratives.",
                 image: "https://randomuser.me/api/portraits/men/32.jpg"
             },
             {
@@ -33,7 +33,7 @@ const Testimonials = () => {
                 country: "Sénégal",
                 uni: "Bilkent University",
                 major: "Administration des Affaires",
-                text: "Venir du Sénégal était un grand pas, mais MG SERVİS a rendu la transition si facile.",
+                text: "Venir du Sénégal était un grand pas, mais TOUMAİ a rendu la transition si facile.",
                 image: "/testimonials/moussa.png"
             },
             {
@@ -42,7 +42,7 @@ const Testimonials = () => {
                 country: "Mali",
                 uni: "Istanbul Aydın University",
                 major: "Relations Internationales",
-                text: "MG SERVİS a été incroyable. Ils m'ont soutenu de Bamako jusqu'à Istanbul. Je me sens chez moi ici.",
+                text: "TOUMAİ a été incroyable. Ils m'ont soutenu de Bamako jusqu'à Istanbul. Je me sens chez moi ici.",
                 image: "/testimonials/aminata.png"
             },
             {
@@ -71,7 +71,7 @@ const Testimonials = () => {
                 country: "Morocco",
                 uni: "Koç University",
                 major: "Computer Engineering",
-                text: "Thanks to MG SERVİS, I was admitted to Koç University. The team managed all my administrative procedures.",
+                text: "Thanks to TOUMAİ, I was admitted to Koç University. The team managed all my administrative procedures.",
                 image: "https://randomuser.me/api/portraits/men/32.jpg"
             },
             {
@@ -89,7 +89,7 @@ const Testimonials = () => {
                 country: "Senegal",
                 uni: "Bilkent University",
                 major: "Business Administration",
-                text: "Coming from Senegal was a big step, but MG SERVİS made the transition so easy.",
+                text: "Coming from Senegal was a big step, but TOUMAİ made the transition so easy.",
                 image: "/testimonials/moussa.png"
             },
             {
@@ -98,7 +98,7 @@ const Testimonials = () => {
                 country: "Mali",
                 uni: "Istanbul Aydın University",
                 major: "International Relations",
-                text: "MG SERVİS was incredible. They supported me from Bamako to Istanbul. I feel at home here.",
+                text: "TOUMAİ was incredible. They supported me from Bamako to Istanbul. I feel at home here.",
                 image: "/testimonials/aminata.png"
             },
             {
@@ -127,7 +127,7 @@ const Testimonials = () => {
                 country: "المغرب",
                 uni: "جامعة كوتش",
                 major: "هندسة الكمبيوتر",
-                text: "بفضل MG SERVİS، تم قبولي في جامعة كوتش. أدار الفريق جميع إجراءاتي الإدارية باحترافية.",
+                text: "بفضل TOUMAİ، تم قبولي في جامعة كوتش. أدار الفريق جميع إجراءاتي الإدارية باحترافية.",
                 image: "https://randomuser.me/api/portraits/men/32.jpg"
             },
             {
@@ -145,7 +145,7 @@ const Testimonials = () => {
                 country: "السنغال",
                 uni: "جامعة بيلكنت",
                 major: "إدارة الأعمال",
-                text: "القدوم من السنغال كان خطوة كبيرة، لكن MG SERVİS جعلت الانتقال سهلاً للغاية.",
+                text: "القدوم من السنغال كان خطوة كبيرة، لكن TOUMAİ جعلت الانتقال سهلاً للغاية.",
                 image: "/testimonials/moussa.png"
             },
             {
@@ -154,7 +154,7 @@ const Testimonials = () => {
                 country: "مالي",
                 uni: "جامعة اسطنبول أيدين",
                 major: "العلاقات الدولية",
-                text: "كانت MG SERVİS رائعة. دعموني من باماكو إلى اسطنبول. أشعر وكأنني في منزلي هنا.",
+                text: "كانت TOUMAİ رائعة. دعموني من باماكو إلى اسطنبول. أشعر وكأنني في منزلي هنا.",
                 image: "/testimonials/aminata.png"
             },
             {

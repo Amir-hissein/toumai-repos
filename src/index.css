@@ -71,14 +71,11 @@ h6 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--secondary);
 }
 
 .bg-gradient {
-  background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+  background: var(--secondary);
 }
 
 .section-title {
@@ -107,7 +104,7 @@ h6 {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+  background: var(--secondary);
   color: white;
   box-shadow: var(--shadow-md);
 }
@@ -131,12 +128,12 @@ h6 {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--primary-start);
-  color: var(--primary-start);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
 }
 
 .btn-outline:hover {
-  background: var(--primary-start);
+  background: var(--secondary);
   color: white;
 }
 

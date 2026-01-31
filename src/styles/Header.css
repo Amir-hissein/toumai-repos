@@ -47,7 +47,7 @@
 }
 
 .logo-icon-wrapper {
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -135,12 +135,12 @@
 
 .lang-option:hover {
     background: #f8fafc;
-    color: var(--primary-start);
+    color: var(--secondary);
 }
 
 .lang-option.active {
     background: rgba(14, 165, 233, 0.1);
-    color: var(--primary-start);
+    color: var(--secondary);
     font-weight: 700;
 }
 
@@ -186,9 +186,9 @@
 }
 
 .mobile-lang-options button.active {
-    background: var(--primary-start);
+    background: var(--secondary);
     color: white;
-    border-color: var(--primary-start);
+    border-color: var(--secondary);
 }
 
 /* Navigation Links - Default (Transparent Header = Light Text) */
@@ -227,7 +227,7 @@
 }
 
 .header.scrolled .nav-link:hover {
-    color: var(--primary-start);
+    color: var(--secondary);
 }
 
 /* Logo Text - Default White */
@@ -236,11 +236,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #ffffff 0%, var(--neutral-light) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
     font-size: 1.4rem;
     transition: all 0.3s;
     white-space: nowrap;
@@ -248,11 +244,7 @@
 }
 
 .header.scrolled .logo-text {
-    background: linear-gradient(135deg, var(--primary-start) 0%, var(--primary-end) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
+    color: var(--neutral-dark);
 }
 
 /* Header CTA Button */
@@ -278,14 +270,14 @@
 
 .cta-btn:hover {
     background: white !important;
-    color: var(--primary-start) !important;
+    color: var(--secondary) !important;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Scrolled State CTA */
 .header.scrolled .cta-btn {
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end)) !important;
+    background: var(--secondary) !important;
     border: none !important;
     color: white !important;
     box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
@@ -353,7 +345,7 @@
 
 .mobile-link:hover {
     background: #e2e8f0;
-    color: var(--primary-start);
+    color: var(--secondary);
     transform: translateY(-2px);
 }
 

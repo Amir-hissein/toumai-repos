@@ -12,7 +12,7 @@
         "badge": "🎓 Your gateway to excellence",
         "title_start": "Achieve Your Dreams",
         "title_end": "of Studying in Turkey",
-        "description": "MG SERVİS guides you to the best public and private Turkish universities. Benefit from personalized support from orientation to your settlement.",
+        "description": "Your best guide to study at the best Turkish universities, public and private.",
         "cta_primary": "Start Now",
         "cta_secondary": "Learn More",
         "stats": {
@@ -182,11 +182,11 @@
         ]
     },
     "footer": {
-        "desc": "MG SERVİS is an agency specializing in guiding international students towards academic excellence in Turkey.",
+        "desc": "TOUMAİ is an agency specializing in guiding international students towards academic excellence in Turkey.",
         "links_title": "Quick Links",
         "services_title": "Our Services",
         "contact_title": "Contact Us",
-        "rights": "© {{year}} MG SERVİS - All rights reserved",
+        "rights": "© {{year}} TOUMAİ - All rights reserved",
         "legal": {
             "terms": "Legal Notice",
             "privacy": "Privacy Policy",

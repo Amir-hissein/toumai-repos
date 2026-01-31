@@ -18,7 +18,7 @@ const Footer = () => {
                             <div className="logo-icon-wrapper-sm">
                                 <FaGraduationCap />
                             </div>
-                            <span>MG SERVİS</span>
+                            <span>TOUMAİ</span>
                         </a>
                         <p className="footer-desc">
                             {t('footer.desc')}

@@ -12,7 +12,7 @@
         "badge": "🎓 Votre porte d'entrée vers l'excellence",
         "title_start": "Réalisez Vos Rêves",
         "title_end": "d'Études en Turquie",
-        "description": "MG SERVİS vous accompagne vers les meilleures universités turques publiques et privées. Bénéficiez d'un suivi personnalisé de l'orientation jusqu'à votre installation.",
+        "description": "Votre meilleur guide pour étudier dans les meilleures universités turques, publiques et privées.",
         "cta_primary": "Commencer",
         "cta_secondary": "En Savoir Plus",
         "stats": {
@@ -182,11 +182,11 @@
         ]
     },
     "footer": {
-        "desc": "MG SERVİS est une agence spécialisée dans l'accompagnement des étudiants internationaux vers l'excellence académique en Turquie.",
+        "desc": "TOUMAİ est une agence spécialisée dans l'accompagnement des étudiants internationaux vers l'excellence académique en Turquie.",
         "links_title": "Liens Rapides",
         "services_title": "Nos Services",
         "contact_title": "Contactez-nous",
-        "rights": "© {{year}} MG SERVİS - Tous droits réservés",
+        "rights": "© {{year}} TOUMAİ - Tous droits réservés",
         "legal": {
             "terms": "Mentions Légales",
             "privacy": "Politique de Confidentialité",

@@ -31,11 +31,8 @@
 
 .quote-icon {
     font-size: 2.5rem;
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
-    -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--secondary);
+    opacity: 0.3;
     opacity: 0.2;
     margin-bottom: 2rem;
     position: absolute;
@@ -82,7 +79,7 @@
 .author-uni {
     display: block;
     font-size: 0.9rem;
-    color: var(--primary-start);
+    color: var(--secondary);
     margin-top: 0.25rem;
     font-weight: 500;
 }
@@ -110,7 +107,7 @@
 }
 
 .nav-btn:hover {
-    background: var(--primary-start);
+    background: var(--secondary);
     color: white;
     transform: scale(1.1);
     box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
@@ -133,7 +130,7 @@
 }
 
 .dot.active {
-    background: var(--primary-start);
+    background: var(--secondary);
     width: 30px;
     border-radius: 5px;
 }

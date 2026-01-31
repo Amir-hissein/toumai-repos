@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(to bottom, var(--neutral-dark), #020617);
+    background: var(--neutral-dark);
     color: var(--neutral-light);
     padding: 5rem 0 2rem 0;
     position: relative;
@@ -12,8 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 90% 10%, rgba(79, 70, 229, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 10% 90%, rgba(6, 182, 212, 0.05) 0%, transparent 40%);
+    background: transparent;
     z-index: 0;
     pointer-events: none;
 }
@@ -55,7 +54,7 @@
     left: 0;
     width: 40px;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-start), var(--secondary));
+    background: var(--secondary);
     border-radius: 0px;
 }
 
@@ -71,7 +70,7 @@
 }
 
 .logo-icon-wrapper-sm {
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
     width: 32px;
     height: 32px;
     border-radius: 4px;
@@ -108,7 +107,7 @@
 }
 
 .social-link:hover {
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
     transform: translateY(-3px);
 }
 
@@ -145,7 +144,7 @@
 }
 
 .contact-icon {
-    color: var(--primary-start);
+    color: var(--secondary);
     font-size: 1.1rem;
     margin-top: 0.1rem;
 }
@@ -207,7 +206,7 @@
 
 .dev-credit:hover {
     opacity: 1;
-    color: var(--primary-start);
+    color: var(--secondary);
     transform: translateY(-2px);
     background: rgba(255, 255, 255, 0.05);
 }

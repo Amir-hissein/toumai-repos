@@ -55,7 +55,7 @@
     justify-content: center;
     border-radius: 12px;
     color: white;
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
     box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
     flex-shrink: 0;
 }
@@ -96,7 +96,7 @@
 .filiere-list li:hover {
     background: white;
     border-color: #e2e8f0;
-    color: var(--primary-start);
+    color: var(--secondary);
     transform: translateX(5px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
@@ -108,7 +108,7 @@
 }
 
 .filiere-list li:hover .list-icon {
-    color: var(--primary-start);
+    color: var(--secondary);
 }
 
 /* Card Overlays/accents */
@@ -127,7 +127,7 @@
 .filiere-card.color-purple .filiere-icon,
 .filiere-card.color-pink .filiere-icon,
 .filiere-card.color-green .filiere-icon {
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
 }
 
 /* Buttons */
@@ -140,7 +140,7 @@
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
     border-radius: var(--radius-btn);
-    background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
     border: none;
     color: white;
     font-weight: 600;

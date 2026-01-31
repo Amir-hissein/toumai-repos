@@ -48,7 +48,7 @@ const Header = () => {
                     <div className="logo-icon-wrapper">
                         <FaGraduationCap className="logo-icon" />
                     </div>
-                    <span className="logo-text">MG SERVİS</span>
+                    <span className="logo-text">TOUMAİ</span>
                 </a>
 
                 {/* Desktop Menu */}

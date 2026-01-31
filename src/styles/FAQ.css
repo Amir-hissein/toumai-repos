@@ -1,6 +1,6 @@
 /* Section Background */
 .faq-section {
-    background: linear-gradient(to bottom, #f8fafc, #eff6ff);
+    background: var(--neutral-light);
     padding: 6rem 0;
     position: relative;
     overflow: hidden;
@@ -14,7 +14,7 @@
     right: -5%;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(79, 70, 229, 0.05) 0%, transparent 70%);
+    background: transparent;
     border-radius: 50%;
     z-index: 0;
 }
@@ -49,7 +49,7 @@
 
 /* Active State */
 .faq-item.open {
-    border-color: var(--primary-light);
+    border-color: var(--secondary);
     box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.15), 0 8px 10px -6px rgba(79, 70, 229, 0.1);
     background: var(--white);
 }
@@ -61,7 +61,7 @@
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
 }
 
 /* Question Header */
@@ -84,7 +84,7 @@
 }
 
 .faq-item.open .faq-question h3 {
-    color: var(--primary-start);
+    color: var(--secondary);
 }
 
 /* Toggle Icon */
@@ -103,11 +103,11 @@
 
 .faq-item:hover .icon-box {
     background: #e0e7ff;
-    color: var(--primary-start);
+    color: var(--secondary);
 }
 
 .faq-item.open .icon-box {
-    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    background: var(--secondary);
     color: white;
     transform: rotate(180deg);
     box-shadow: 0 4px 6px rgba(79, 70, 229, 0.3);

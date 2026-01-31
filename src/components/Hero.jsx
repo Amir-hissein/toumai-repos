@@ -46,15 +46,19 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                 >
-                    <motion.div variants={itemVariants} className="hero-badge-container">
-                        <span className="hero-badge-glow"></span>
-                        <span className="hero-badge-text">{t('hero.badge')}</span>
+                    <motion.div variants={itemVariants} className="hero-brand-name">
+                        <span className="brand-text">TOUMAİ</span>
                     </motion.div>
 
                     <motion.h1 variants={itemVariants} className="hero-title">
                         {t('hero.title_start')} <br />
                         <span className="gradient-text-hero">{t('hero.title_end')}</span>
                     </motion.h1>
+
+                    <motion.div variants={itemVariants} className="hero-badge-container">
+                        <span className="hero-badge-glow"></span>
+                        <span className="hero-badge-text">{t('hero.badge')}</span>
+                    </motion.div>
 
                     <motion.p variants={itemVariants} className="hero-description">
                         {t('hero.description')}
