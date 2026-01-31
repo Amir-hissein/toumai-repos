@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaLaptopCode, FaHeartbeat, FaBriefcase, FaGlobeAmericas, FaPalette, FaFlask, FaAngleRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -6,6 +6,8 @@ import '../styles/Filieres.css';
 
 const Filieres = () => {
     const { t, i18n } = useTranslation();
+    const [showAll, setShowAll] = useState(false);
+    const isFirstRender = useRef(true);
 
     const categories = [
         {
@@ -86,10 +88,37 @@ const Filieres = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }
     };
 
-    const [showAll, setShowAll] = React.useState(false);
-
     // Show only first 3 items on mobile/desktop initially, or all if showAll is true
     const visibleCategories = showAll ? categories : categories.slice(0, 3);
+
+    useEffect(() => {
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+
+        if (showAll) {
+            // Scroll to the first newly revealed card (index 3)
+            setTimeout(() => {
+                const firstNewCard = document.getElementById('filiere-card-3');
+                if (firstNewCard) {
+                    const headerOffset = 120;
+                    const elementPosition = firstNewCard.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                }
+            }, 300); // Wait for repaint
+        } else {
+            // Scroll back to top of section when closing
+            const section = document.getElementById('filieres');
+            if (section) {
+                const headerOffset = 100;
+                const elementPosition = section.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+            }
+        }
+    }, [showAll]);
 
     return (
         <section id="filieres" className="section filieres-section">
@@ -136,33 +165,9 @@ const Filieres = () => {
                     <motion.button
                         variants={itemVariants}
                         className="btn btn-primary pulse-btn"
-                        onClick={() => {
-                            if (showAll) {
-                                setShowAll(false);
-                                // Scroll back to top of section when closing
-                                const section = document.getElementById('filieres');
-                                if (section) {
-                                    const headerOffset = 100;
-                                    const elementPosition = section.getBoundingClientRect().top;
-                                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
-                                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-                                }
-                            } else {
-                                setShowAll(true);
-                                // Sroll to the first newly revealed card (index 3)
-                                setTimeout(() => {
-                                    const firstNewCard = document.getElementById('filiere-card-3');
-                                    if (firstNewCard) {
-                                        const headerOffset = 120;
-                                        const elementPosition = firstNewCard.getBoundingClientRect().top;
-                                        const offsetPosition = elementPosition + window.scrollY - headerOffset;
-                                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-                                    }
-                                }, 100);
-                            }
-                        }}
+                        onClick={() => setShowAll(!showAll)}
                     >
-                        {showAll ? (i18n.language === 'fr' ? 'Voir moins' : i18n.language === 'ar' ? 'عرض أقل' : 'Show Less') : t('programs.view_all')}
+                        {showAll ? (t('programs.show_less') || (i18n.language === 'fr' ? 'Voir moins' : i18n.language === 'ar' ? 'عرض أقل' : 'Show Less')) : t('programs.view_all')}
                     </motion.button>
                 </div>
             </motion.div>
