@@ -197,6 +197,17 @@ textarea {
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
   /* Offset for fixed header */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+    /* Reduced from 2.5rem */
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
 }

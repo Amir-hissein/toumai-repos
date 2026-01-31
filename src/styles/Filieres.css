@@ -154,6 +154,35 @@
     box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4);
 }
 
+@media (max-width: 768px) {
+    .filieres-section {
+        padding: 3rem 0;
+    }
+
+    .filieres-grid {
+        gap: 1.5rem;
+    }
+
+    .filiere-card {
+        padding: 1.5rem;
+    }
+
+    .filiere-header {
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+    }
+
+    .filiere-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .filiere-title {
+        font-size: 1.2rem;
+    }
+}
+
 @media (min-width: 768px) {
     .filieres-grid {
         grid-template-columns: repeat(2, 1fr);

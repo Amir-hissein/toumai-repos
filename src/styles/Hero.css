@@ -367,11 +367,13 @@
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        /* Further reduced from 2rem */
     }
 
     .brand-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        /* Reduced from 2.5rem */
         letter-spacing: -1px;
     }
 
@@ -409,11 +411,13 @@
 /* Small Mobile */
 @media (max-width: 480px) {
     .brand-text {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        /* Reduced from 2rem */
     }
 
     .hero-title {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        /* Reduced from 1.6rem */
     }
 
     .hero-badge-text {

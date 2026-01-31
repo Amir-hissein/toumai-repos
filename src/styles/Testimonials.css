@@ -141,16 +141,32 @@
     }
 
     .testimonial-card {
-        padding: 2.5rem 1.5rem;
+        padding: 1.5rem 1rem;
+        /* Significantly reduced padding */
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+        /* Reduced from 1.2rem */
+        margin-bottom: 1.5rem;
     }
 
     .testimonial-author {
         flex-direction: column;
         text-align: center;
+        gap: 0.5rem;
+    }
+
+    .author-img {
+        width: 50px;
+        /* Smaller image */
+        height: 50px;
     }
 
     .quote-icon {
         position: static;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        /* Smaller icon */
     }
 }
