@@ -131,20 +131,33 @@ const Filieres = () => {
                     ))}
                 </div>
 
-                {!showAll && (
-                    <div className="center-btn" style={{ marginTop: '3rem' }}>
-                        <motion.button
-                            variants={itemVariants}
-                            className="btn btn-primary pulse-btn"
-                            onClick={() => setShowAll(true)}
-                        >
-                            {t('programs.view_all')}
-                        </motion.button>
-                    </div>
-                )}
+                <div className="center-btn" style={{ marginTop: '3rem' }}>
+                    <motion.button
+                        variants={itemVariants}
+                        className="btn btn-primary pulse-btn"
+                        onClick={() => {
+                            if (showAll) {
+                                setShowAll(false);
+                                // Scroll back to top of section when closing
+                                const section = document.getElementById('filieres');
+                                if (section) {
+                                    const headerOffset = 100;
+                                    const elementPosition = section.getBoundingClientRect().top;
+                                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                                }
+                            } else {
+                                setShowAll(true);
+                            }
+                        }}
+                    >
+                        {showAll ? (i18n.language === 'fr' ? 'Voir moins' : i18n.language === 'ar' ? 'عرض أقل' : 'Show Less') : t('programs.view_all')}
+                    </motion.button>
+                </div>
             </motion.div>
         </section>
     );
 };
 
 export default Filieres;
+
