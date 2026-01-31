@@ -109,6 +109,7 @@ const Filieres = () => {
                 <div className="filieres-grid">
                     {visibleCategories.map((cat, idx) => (
                         <motion.div
+                            id={`filiere-card-${idx}`}
                             className={`filiere-card color-${cat.color}`}
                             key={idx}
                             variants={itemVariants}
@@ -148,6 +149,16 @@ const Filieres = () => {
                                 }
                             } else {
                                 setShowAll(true);
+                                // Sroll to the first newly revealed card (index 3)
+                                setTimeout(() => {
+                                    const firstNewCard = document.getElementById('filiere-card-3');
+                                    if (firstNewCard) {
+                                        const headerOffset = 120;
+                                        const elementPosition = firstNewCard.getBoundingClientRect().top;
+                                        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                                    }
+                                }, 100);
                             }
                         }}
                     >
