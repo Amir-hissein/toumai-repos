@@ -326,15 +326,38 @@
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+    /* More top padding for breathing room */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* Center items vertically */
+    justify-content: flex-start;
+    /* Align to top */
     gap: 1rem;
-    /* Reduced gap */
     /* More space between items */
     z-index: 999;
+    overflow-y: auto;
+    /* Allow scrolling on small screens */
+}
+
+.mobile-menu-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    /* Space before links */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.mobile-logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+}
+
+.mobile-logo-text {
+    color: var(--neutral-dark);
+    font-size: 1.25rem;
 }
 
 /* Ensure footer or other elements don't overlap */

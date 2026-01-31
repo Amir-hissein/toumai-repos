@@ -129,6 +129,13 @@ const Header = () => {
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.3 }}
                         >
+                            <div className="mobile-menu-header">
+                                <div className="logo-icon-wrapper mobile-logo-icon">
+                                    <FaGraduationCap />
+                                </div>
+                                <span className="logo-text mobile-logo-text">TOUMAİ</span>
+                            </div>
+
                             {navLinks.map(link => (
                                 <a
                                     key={link.href}
