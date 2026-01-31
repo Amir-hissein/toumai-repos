@@ -141,7 +141,10 @@ const Filieres = () => {
                             id={`filiere-card-${idx}`}
                             className={`filiere-card color-${cat.color}`}
                             key={idx}
-                            variants={itemVariants}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: idx * 0.1 }}
                             whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
                         >
                             <div className="filiere-header">
