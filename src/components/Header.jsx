@@ -41,8 +41,31 @@ const Header = () => {
         { name: t('header.contact'), href: '#contact' },
     ];
 
+    const handleMobileLinkClick = (e, href) => {
+        e.preventDefault();
+        setIsMobileMenuOpen(false);
+
+        const targetId = href.replace('#', '');
+        const element = document.getElementById(targetId);
+
+        if (element) {
+            // Small delay to allow menu animation to start closing
+            setTimeout(() => {
+                const headerOffset = 100;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }, 100);
+        }
+    };
+
     return (
         <nav className={`header ${isScrolled ? 'scrolled' : ''}`}>
+            {/* ... keeping existing standard desktop JSX ... */}
             <div className="container header-container">
                 <a href="#" className="logo">
                     <div className="logo-icon-wrapper">
@@ -57,7 +80,7 @@ const Header = () => {
                         <a key={link.href} href={link.href} className="nav-link">{link.name}</a>
                     ))}
 
-                    {/* Language Dropdown */}
+                    {/* ... Language Dropdown code ... */}
                     <div className="lang-dropdown-container">
                         <button className="lang-toggle-btn" onClick={toggleLangMenu}>
                             <FaGlobe className="globe-icon" /> <span className="current-lang">{i18n.language.toUpperCase()}</span>
@@ -107,7 +130,14 @@ const Header = () => {
                             transition={{ duration: 0.3 }}
                         >
                             {navLinks.map(link => (
-                                <a key={link.href} href={link.href} className="mobile-link" onClick={() => setIsMobileMenuOpen(false)}>{link.name}</a>
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    className="mobile-link"
+                                    onClick={(e) => handleMobileLinkClick(e, link.href)}
+                                >
+                                    {link.name}
+                                </a>
                             ))}
 
                             <div className="mobile-menu-lang">
@@ -120,7 +150,7 @@ const Header = () => {
                             </div>
 
                             <div className="mobile-cta">
-                                <a href="#contact" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>{t('header.apply_now')}</a>
+                                <a href="#contact" className="btn btn-primary" onClick={(e) => handleMobileLinkClick(e, '#contact')}>{t('header.apply_now')}</a>
                             </div>
                         </motion.div>
                     )}
