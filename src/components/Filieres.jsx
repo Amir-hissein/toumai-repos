@@ -170,7 +170,7 @@ const Filieres = () => {
                         className="btn btn-primary pulse-btn"
                         onClick={() => setShowAll(!showAll)}
                     >
-                        {showAll ? (t('programs.show_less') || (i18n.language === 'fr' ? 'Voir moins' : i18n.language === 'ar' ? 'عرض أقل' : 'Show Less')) : t('programs.view_all')}
+                        {showAll ? t('programs.show_less') : t('programs.view_all')}
                     </motion.button>
                 </div>
             </motion.div>

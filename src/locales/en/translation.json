@@ -101,7 +101,8 @@
             "arts": "Arts & Design",
             "science": "Science & Research"
         },
-        "view_all": "View All Programs"
+        "view_all": "View All Programs",
+        "show_less": "Show Less"
     },
     "testimonials": {
         "subtitle": "Testimonials",

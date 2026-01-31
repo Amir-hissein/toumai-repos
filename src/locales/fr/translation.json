@@ -101,7 +101,8 @@
             "arts": "Arts & Design",
             "science": "Sciences & Recherche"
         },
-        "view_all": "Voir Toutes les Filières"
+        "view_all": "Voir Toutes les Filières",
+        "show_less": "Voir Moins"
     },
     "testimonials": {
         "subtitle": "Témoignages",
