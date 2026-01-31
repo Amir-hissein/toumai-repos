@@ -164,47 +164,68 @@
 }
 
 @media (max-width: 768px) {
+    .testimonials-section {
+        padding: 3rem 0;
+        /* Reduced vertical padding */
+    }
+
+    .testimonials-carousel {
+        padding: 0 1.5rem 2rem 1.5rem;
+        /* Add side padding for peek effect */
+        gap: 1rem;
+        /* Space between cards */
+        align-items: stretch;
+        /* Ensure equal height */
+    }
+
     .nav-btn {
         display: none;
-        /* Hide arrows on mobile, keep dots */
     }
 
     .carousel-controls {
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
     }
 
     .testimonial-card {
-        padding: 2rem 1.5rem;
-        min-width: 100%;
-        /* Ensure full width on mobile */
+        min-width: 85%;
+        /* Shows part of the next card */
+        padding: 1.5rem;
         margin-right: 0;
-        box-shadow: none;
-        /* Cleaner look on mobile scroll */
-        border: none;
-        background: transparent;
+        background: white;
+        /* Restore card background */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        /* Restore soft shadow */
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        border-radius: 12px;
+        /* More rounded corners */
+        opacity: 0.9;
+        /* Slight fade for non-active */
+        transition: opacity 0.3s, transform 0.3s;
     }
 
+    /* Highlight active card logic would need JS, but CSS scroll-snap handles centering well. 
+       We rely on scroll-snap to keep the focused one in view. */
+
     .testimonial-text {
-        font-size: 1rem;
-        margin-bottom: 2rem;
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
     }
 
     .testimonial-author {
         flex-direction: column;
         text-align: center;
-        gap: 0.75rem;
+        gap: 0.5rem;
     }
 
     .author-img {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
 
     .quote-icon {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        position: static;
     }
 }
