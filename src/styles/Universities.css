@@ -1,0 +1,116 @@
+.uni-section {
+    background-color: var(--neutral-light);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.uni-section .section-header {
+    margin-bottom: 6rem;
+}
+
+.uni-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.uni-section .title-underline {
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Carousel Wrapper */
+.uni-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+/* Carousel Container with CSS Animation */
+.uni-carousel {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.uni-carousel:hover {
+    animation-play-state: paused;
+}
+
+/* University Logo Card */
+.uni-logo-card {
+    flex-shrink: 0;
+    width: 280px;
+    height: 180px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.uni-logo-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--secondary);
+    transform: scale(1.05) translateY(-5px);
+}
+
+.uni-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .uni-section {
+        padding: 3rem 0;
+    }
+
+    .uni-logo-card {
+        width: 200px;
+        height: 130px;
+    }
+
+    .uni-carousel {
+        gap: 1rem;
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] .uni-carousel {
+    animation: scroll-rtl 20s linear infinite;
+}
+
+@keyframes scroll-rtl {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}

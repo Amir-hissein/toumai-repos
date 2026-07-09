@@ -1,0 +1,212 @@
+{
+    "header": {
+        "home": "Accueil",
+        "services": "Services",
+        "universities": "Universités",
+        "programs": "Filières",
+        "testimonials": "Témoignages",
+        "contact": "Contact",
+        "apply_now": "Postuler Maintenant"
+    },
+    "hero": {
+        "badge": "🎓 Votre porte d'entrée vers l'excellence",
+        "title_start": "Réalisez Vos Rêves",
+        "title_end": "d'Études en Turquie",
+        "description": "TOUMAİ vous accompagne vers les meilleures universités turques publiques et privées. Bénéficiez d'un suivi personnalisé de l'orientation jusqu'à votre installation.",
+        "cta_primary": "Commencer",
+        "cta_secondary": "En Savoir Plus",
+        "stats": {
+            "universities": "Universités Partenaires",
+            "students": "Étudiants Accompagnés",
+            "success": "Taux de Réussite",
+            "countries": "Pays Représentés"
+        }
+    },
+    "services": {
+        "subtitle": "Nos Services",
+        "title": "Un Accompagnement",
+        "title_highlight": "Complet",
+        "items": {
+            "consultation": {
+                "title": "Consultation Académique Gratuite",
+                "desc": "Nous vous offrons une analyse complète et précise de votre dossier académique, avec une évaluation de vos points forts et opportunités de développement, pour vous orienter vers les meilleures options d'études."
+            },
+            "admission": {
+                "title": "Admission Universitaire",
+                "desc": "Nous assurons une gestion intégrale de votre dossier de candidature, de la préparation des documents jusqu'au suivi avec les universités, pour maximiser vos chances d'admission."
+            },
+            "visa": {
+                "title": "Visa Étudiant",
+                "desc": "Accompagnement complet étape par étape pour l'obtention de votre visa étudiant, de la préparation du dossier à l'entretien jusqu'à la délivrance du visa."
+            },
+            "housing": {
+                "title": "Logement Étudiant",
+                "desc": "Nous vous aidons à trouver le logement idéal avant votre arrivée en Turquie, résidence ou appartement, en tenant compte de l'emplacement, du budget et de la proximité avec l'université."
+            },
+            "transfer": {
+                "title": "Accueil VIP",
+                "desc": "Service d'accueil premium à l'aéroport avec transfert privé et confortable jusqu'à votre lieu de résidence, pour une arrivée sereine et un début d'aventure réussi."
+            },
+            "support": {
+                "title": "Support 24/7",
+                "desc": "Une équipe spécialisée disponible à tout moment pour vous accompagner et répondre à vos questions durant votre première année académique et administrative."
+            }
+        }
+    },
+    "universities": {
+        "subtitle": "Excellence Académique",
+        "title": "Nos",
+        "title_highlight": "Nos Partenaires",
+        "tabs": {
+            "public": "Universités Publiques",
+            "private": "Universités Privées"
+        },
+        "card": {
+            "details": "Voir Détails",
+            "location": "Localisation"
+        },
+        "view_all": "Voir Toutes les Universités",
+        "locations": {
+            "Istanbul": "Istanbul",
+            "Ankara": "Ankara",
+            "Izmir": "Izmir",
+            "Antalya": "Antalya",
+            "Bursa": "Bursa",
+            "Kocaeli": "Kocaeli",
+            "Sakarya": "Sakarya",
+            "Trabzon": "Trabzon",
+            "Erzurum": "Erzurum",
+            "Samsun": "Samsun",
+            "Adana": "Adana",
+            "Konya": "Konya",
+            "Kayseri": "Kayseri",
+            "Eskişehir": "Eskişehir",
+            "Mersin": "Mersin",
+            "Isparta": "Isparta",
+            "Çanakkale": "Çanakkale",
+            "Bolu": "Bolu",
+            "Muğla": "Muğla",
+            "Denizli": "Denizli"
+        }
+    },
+    "programs": {
+        "subtitle": "Votre Avenir Professionnel",
+        "title": "Explorez Nos",
+        "title_highlight": "Filières",
+        "categories": {
+            "engineering": "Ingénierie & Technologie",
+            "health": "Médecine & Santé",
+            "business": "Commerce & Économie",
+            "social": "Sciences Sociales",
+            "arts": "Arts & Design",
+            "science": "Sciences & Recherche"
+        },
+        "view_all": "Voir Toutes les Filières",
+        "show_less": "Voir Moins"
+    },
+    "testimonials": {
+        "subtitle": "Témoignages",
+        "title": "Ce Que Disent",
+        "title_highlight": "Nos Étudiants"
+    },
+    "process": {
+        "subtitle": "Processus Simple",
+        "title": "Comment",
+        "title_highlight": "Ça Marche ?",
+        "steps": {
+            "1": {
+                "title": "Consultation",
+                "desc": "Analyse de profil"
+            },
+            "2": {
+                "title": "Sélection",
+                "desc": "Choix des universités"
+            },
+            "3": {
+                "title": "Dossier",
+                "desc": "Préparation documents"
+            },
+            "4": {
+                "title": "Admission",
+                "desc": "Réception lettre"
+            },
+            "5": {
+                "title": "Visa & Départ",
+                "desc": "Formalités & Voyage"
+            }
+        }
+    },
+    "contact": {
+        "subtitle": "Contactez-nous",
+        "title_start": "Commencez Votre",
+        "title_end": "Aventure",
+        "desc": "Remplissez le formulaire et notre équipe vous contactera sous 24h",
+        "form": {
+            "name": "Nom Complet",
+            "email": "Email",
+            "phone": "Numéro de Téléphone",
+            "uni_type": "Type d'Université",
+            "public": "Publique",
+            "private": "Privée",
+            "program": "Filière Souhaitée",
+            "program_placeholder": "Sélectionnez une filière...",
+            "level": "Niveau Actuel",
+            "year": "Année Début",
+            "message": "Message (Optionnel)",
+            "message_placeholder": "Décrivez votre projet d'études...",
+            "consent": "J'accepte que mes données soient utilisées pour me contacter concernant ma demande",
+            "submit": "Envoyer ma Demande",
+            "success_title": "Demande Envoyée !",
+            "success_desc": "Merci {{name}}, votre demande a été envoyée par email. Nous vous répondrons sous 24h.",
+            "new_request": "Nouvelle Demande",
+            "error_required": "Ce champ est obligatoire",
+            "error_email": "Email invalide",
+            "error_consent": "Vous devez accepter les conditions",
+            "levels": {
+                "lycee": "Lycée (Terminale)",
+                "bac": "Baccalauréat obtenu",
+                "licence_cours": "Licence en cours",
+                "licence_ok": "Licence obtenue",
+                "master_cours": "Master en cours",
+                "master_ok": "Master obtenu"
+            }
+        }
+    },
+    "faq": {
+        "subtitle": "FAQ",
+        "title": "Questions",
+        "title_highlight": "Fréquentes",
+        "items": [
+            {
+                "q": "Quels sont les frais de service ?",
+                "a": "Nos frais varient selon le service. Contactez-nous pour un devis."
+            },
+            {
+                "q": "Le processus prend combien de temps ?",
+                "a": "Entre 1 et 3 semaines en général."
+            },
+            {
+                "q": "Faut-il parler turc ?",
+                "a": "Non, beaucoup de programmes sont en anglais."
+            },
+            {
+                "q": "Y a-t-il des bourses ?",
+                "a": "Oui, jusqu'à 100% dans certaines universités privées."
+            }
+        ]
+    },
+    "footer": {
+        "desc": "TOUMAİ est une agence spécialisée dans l'accompagnement des étudiants internationaux vers l'excellence académique en Turquie.",
+        "links_title": "Liens Rapides",
+        "services_title": "Nos Services",
+        "contact_title": "Contactez-nous",
+        "rights": "© {{year}} TOUMAİ - Tous droits réservés",
+        "legal": {
+            "terms": "Mentions Légales",
+            "privacy": "Politique de Confidentialité",
+            "cgu": "CGU"
+        },
+        "hours": "Lun-Ven 9h-18h",
+        "developed_by": "Développé par TOBEESOFT"
+    }
+}
