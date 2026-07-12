@@ -67,7 +67,7 @@
     width: 40px;
     height: 3px;
     background: var(--secondary);
-    border-radius: 0px;
+    
 }
 
 .footer-logo {
@@ -128,7 +128,7 @@
     width: 36px;
     height: 36px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,7 +232,7 @@
     transition: all 0.3s ease;
     display: inline-block;
     padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    
 }
 
 .dev-credit:hover {

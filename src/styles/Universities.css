@@ -20,7 +20,7 @@
     height: 4px;
     background: var(--secondary);
     margin: 0 auto;
-    border-radius: 2px;
+    
 }
 
 /* Carousel Wrapper */
@@ -61,7 +61,7 @@
     width: 280px;
     height: 180px;
     background: white;
-    border-radius: 8px;
+    
     display: flex;
     align-items: center;
     justify-content: center;

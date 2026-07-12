@@ -14,7 +14,7 @@
     width: 60px;
     height: 60px;
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    border-radius: 50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@
     height: 16px;
     background: #4ade80;
     border: 3px solid white;
-    border-radius: 50%;
+    
     animation: pulse-online 2s infinite;
 }
 
@@ -67,7 +67,7 @@
     background: #1f2937;
     color: white;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    
     font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;

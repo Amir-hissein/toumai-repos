@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPlayCircle, FaArrowRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import MouseParallax from './MouseParallax';
 import '../styles/Hero.css';
 
 import hero1 from '../assets/images/hero1.png';
@@ -68,19 +69,25 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                 >
-                    <motion.h1 variants={itemVariants} className="hero-title">
-                        {t('hero.title_start')} <br />
-                        <span className="gradient-text-hero">{t('hero.title_end')}</span>
-                    </motion.h1>
+                    <MouseParallax strength={15}>
+                        <motion.h1 variants={itemVariants} className="hero-title">
+                            {t('hero.title_start')} <br />
+                            <span className="gradient-text-hero">{t('hero.title_end')}</span>
+                        </motion.h1>
+                    </MouseParallax>
 
-                    <motion.div variants={itemVariants} className="hero-badge-container">
-                        <span className="hero-badge-glow"></span>
-                        <span className="hero-badge-text">{t('hero.badge')}</span>
-                    </motion.div>
+                    <MouseParallax strength={-10}>
+                        <motion.div variants={itemVariants} className="hero-badge-container">
+                            <span className="hero-badge-glow"></span>
+                            <span className="hero-badge-text">{t('hero.badge')}</span>
+                        </motion.div>
+                    </MouseParallax>
 
-                    <motion.p variants={itemVariants} className="hero-description">
-                        {t('hero.description')}
-                    </motion.p>
+                    <MouseParallax strength={5}>
+                        <motion.p variants={itemVariants} className="hero-description">
+                            {t('hero.description')}
+                        </motion.p>
+                    </MouseParallax>
 
                     <motion.div variants={itemVariants} className="hero-buttons">
                         <a href="#contact" className="btn btn-primary btn-lg pulse-animation">

@@ -30,7 +30,7 @@
 
   /* Unified Design Tokens */
   --radius-btn: 12px;
-  /* Consistent rounded corners */
+  /* Consistent corners */
 
   /* Elevation & Depth */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -93,7 +93,7 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 0.875rem 2rem;
-  border-radius: var(--radius-btn);
+  
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,6 +138,7 @@ h6 {
 }
 
 /* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -32,7 +32,7 @@
     scroll-snap-align: center;
     background: white;
     padding: 3rem;
-    border-radius: 4px;
+    
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     /* Softer shadow */
     text-align: center;
@@ -86,7 +86,7 @@
 .author-img {
     width: 70px;
     height: 70px;
-    border-radius: 50%;
+    
     /* Circle looks better */
     object-fit: cover;
     border: 3px solid #f8fafc;
@@ -124,7 +124,7 @@
     border: none;
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +152,7 @@
 .dot {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    
     background: #e2e8f0;
     cursor: pointer;
     transition: all 0.3s;
@@ -195,7 +195,7 @@
         background: white;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 16px;
+        
         opacity: 1;
         display: flex;
         flex-direction: column;
@@ -312,7 +312,7 @@
         padding: 1.5rem;
         background: white;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-        border-radius: 20px;
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -342,7 +342,7 @@
     .author-img {
         width: 45px;
         height: 45px;
-        border-radius: 50%;
+        
     }
 
     .quote-icon {
